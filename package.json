@@ -1,0 +1,15 @@
+{
+  "name": "3d-earth",
+  "version": "1.0.0",
+  "description": "a demo for a 3d earth glboe",
+  "main": "index.js",
+  "dependencies": {
+    "three": "^0.123.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chaos",
+  "license": "ISC"
+}

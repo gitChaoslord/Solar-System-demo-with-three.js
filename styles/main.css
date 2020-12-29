@@ -1,0 +1,18 @@
+ * {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border:none;
+    overflow: hidden;
+ }
+ 
+body { margin: 0; overflow: hidden; background-color: #000; } 
+
+
+
+#PlanetMenu {
+    position:absolute;
+    z-index:5;
+    top:50%;
+    left:50%;
+}
