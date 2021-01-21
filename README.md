@@ -1,4 +1,4 @@
-You can see it in action here : https://chaoslord69.github.io/Solar-System-demo-with-three.js/  
+You can see it in action here : https://gitchaoslord.github.io/Solar-System-demo-with-three.js/
 
 This was created with https://threejs.org/.  
 
