@@ -1,4 +1,5 @@
-import * as THREE from "https://threejs.org/build/three.module.js"
+//import * as THREE from "https://threejs.org/build/three.module.js"
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.module.js"
 import { TrackballControls } from 'https://threejs.org/examples/jsm/controls/TrackballControls.js';
 //import * as THREE from "../node_modules/three/build/three.module.js"
 //import { TrackballControls } from '../node_modules/three/examples/jsm/controls/TrackballControls.js';
