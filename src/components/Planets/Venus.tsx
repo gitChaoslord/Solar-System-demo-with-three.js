@@ -9,7 +9,7 @@ const Venus: React.FC = () => {
   const group: GroupProps = useRef<GroupProps>();
   useFrame(() => {
     planet.current.rotation.y += 0.01;
-    group.current.rotation.z += 0.01
+    group.current.rotation.z += 0.01622
   })
   return (
     <React.Fragment>
