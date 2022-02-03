@@ -1,7 +1,7 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei';
-import './app.css'
+import './app.css';
 import SolarSystem from './components/System';
 
 const App: React.FC = () => {

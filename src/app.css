@@ -13,5 +13,5 @@ body {
 
 #root {
   height:100vh;
-  background-image: url("/public/images/2k_stars.jpg")
+  background-image: url("/public/images/2k_stars.jpg");
 }
