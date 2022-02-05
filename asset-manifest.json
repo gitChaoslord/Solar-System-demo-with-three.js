@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Solar-System-demo-with-three.js/static/css/main.b0b390fb.css",
-    "main.js": "/Solar-System-demo-with-three.js/static/js/main.e9995c89.js",
+    "main.js": "/Solar-System-demo-with-three.js/static/js/main.be7a1d15.js",
     "static/media/2k_stars.jpg": "/Solar-System-demo-with-three.js/static/media/2k_stars.09fecfb664aafb77e679.jpg",
     "index.html": "/Solar-System-demo-with-three.js/index.html"
   },
   "entrypoints": [
     "static/css/main.b0b390fb.css",
-    "static/js/main.e9995c89.js"
+    "static/js/main.be7a1d15.js"
   ]
 }
