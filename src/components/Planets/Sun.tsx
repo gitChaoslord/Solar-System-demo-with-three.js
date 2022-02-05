@@ -1,12 +1,14 @@
 import { useTexture } from '@react-three/drei';
-import { MeshProps, useFrame } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import React, { useRef } from 'react';
+import * as THREE from 'three';
 
 const Sun: React.FC = () => {
-  const texture = useTexture("images/2k_sun.jpg");
-  const planet: MeshProps = useRef<MeshProps>();
+  const texture: THREE.Texture = useTexture<string>("images/2k_sun.jpg");
+  const planet = useRef<THREE.Mesh>();
+
   useFrame(() => {
-    planet.current.rotation.y += 0.01;
+    planet.current!.rotation.y += 0.004;
   })
 
   return (

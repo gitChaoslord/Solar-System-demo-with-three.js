@@ -1,17 +1,16 @@
 import { useTexture } from '@react-three/drei';
-import { GroupProps, MeshProps, useFrame } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import Ecliptic from '../Ecliptic';
 
 const Mercury: React.FC = () => {
-  const texture = useTexture("images/2k_mercury.jpg");
-  const planet: MeshProps = useRef<MeshProps>();
-  const group: GroupProps = useRef<GroupProps>();
+  const texture: THREE.Texture = useTexture<string>("images/2k_mercury.jpg");
+  const planet = useRef<THREE.Mesh>();
+  const group = useRef<THREE.Group>();
   useFrame(() => {
-    planet.current.rotation.y += 0.01;
-    group.current.rotation.z += 0.0414
+    planet.current!.rotation.y += 0.01;
+    group.current!.rotation.z += 0.0414
   })
-
 
   return (
     <React.Fragment>

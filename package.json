@@ -18,7 +18,7 @@
     "react"
   ],
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SET PUBLIC_URL=. && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build",

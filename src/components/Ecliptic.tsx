@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import * as THREE from 'three';
 
 interface EclipticProps {
   x: number;
@@ -6,12 +7,12 @@ interface EclipticProps {
 }
 
 const Ecliptic: React.FC<EclipticProps> = ({ x, y }) => {
-  const mesh = useRef();
+  const mesh = useRef<THREE.Mesh>();
   return (
     <React.Fragment>
       <mesh ref={mesh}>
         <ringGeometry attach="geometry" args={[x, y, 64]} />
-        <meshBasicMaterial castShadow transparent attach="material" color="white" args={[{ side: 'DoubleSide' }]} />
+        <meshBasicMaterial side={THREE.DoubleSide} transparent attach="material" color="white" />
       </mesh>
     </React.Fragment>
   )

@@ -57,7 +57,6 @@ const SolarSystem: React.FC = () => {
 
   return (
     <React.Fragment>
-      {/* <Sun /> */}
       {planets.map((planet: Planet, index: number) =>
         <React.Fragment key={index + '-' + planet.name}>
           {planet.component}
