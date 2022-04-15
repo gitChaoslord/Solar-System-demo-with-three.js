@@ -7,15 +7,17 @@
   "description": "You can see it in action here : https://gitchaoslord.github.io/Solar-System-demo-with-three.js/",
   "private": true,
   "bugs": {
-    "url": "https://github.com/Chaoslord69/Solar-System-demo-with-three.js/issues"
+    "url": "https://github.com/gitchaoslord/Solar-System-demo-with-three.js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chaoslord69/Solar-System-demo-with-three.js.git"
+    "url": "git+https://github.com/gitchaoslord/Solar-System-demo-with-three.js.git"
   },
   "keywords": [
     "threejs",
-    "react"
+    "react",
+    "typescript",
+    "react-three-fiber"
   ],
   "scripts": {
     "start": "SET PUBLIC_URL=. && react-scripts start",

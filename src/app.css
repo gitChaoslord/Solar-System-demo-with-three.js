@@ -7,13 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  background-color: #292929;
+  background-color: #131313;
 }
 
 
 #root {
-  height:100vh;
-  background-image: url("/public/images/2k_stars.jpg");
+  height: 100vh;
 }
 
 .tooltip {
