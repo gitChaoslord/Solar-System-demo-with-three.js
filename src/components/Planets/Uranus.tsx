@@ -21,7 +21,7 @@ const Uranus: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={175} y={175.5} />
+      <Ecliptic x={175} y={175.2} />
     </React.Fragment>
   )
 }

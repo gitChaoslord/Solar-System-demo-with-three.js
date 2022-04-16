@@ -22,7 +22,7 @@ const Jupiter: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={125} y={125.5} />
+      <Ecliptic x={125} y={125.2} />
     </React.Fragment>
   )
 }

@@ -7,7 +7,9 @@ interface PlanetProps {
   displayName?: boolean
 }
 
-const Earth: React.FC<PlanetProps> = ({ displayName = false }) => {
+const startPos = Math.round(Math.random() * 100);
+
+const Earth: React.FC<PlanetProps> = ({ displayName }) => {
 
   const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(
     TextureLoader,
@@ -16,9 +18,6 @@ const Earth: React.FC<PlanetProps> = ({ displayName = false }) => {
   const planet = useRef<THREE.Mesh>();
   const clouds = useRef<THREE.Group>();
   const group = useRef<THREE.Group>();
-  const [startPos, setStartpos] = React.useState<number>(Math.round(Math.random() * 100));
-
-  const [hovered, setHover] = React.useState<boolean>(false);
 
   useFrame(() => {
     planet.current!.rotation.y += 0.01;
@@ -34,17 +33,17 @@ const Earth: React.FC<PlanetProps> = ({ displayName = false }) => {
           <sphereGeometry args={[4.1, 32, 32]} />
           <meshPhongMaterial map={cloudsMap} opacity={0.4} depthWrite={true} transparent={true} />
         </mesh>
-        <mesh position={[75, 0, 0]} rotation={[90, 0, 0]} ref={planet} onClick={() => setHover(!hovered)} onPointerEnter={() => setHover(true)} onPointerLeave={() => setHover(false)}>
+        <mesh position={[75, 0, 0]} rotation={[90, 0, 0]} ref={planet}>
           <sphereGeometry args={[4, 32, 32]} />
           <meshPhongMaterial specularMap={specularMap} />
           <meshStandardMaterial map={colorMap} normalMap={normalMap} />
           <Html distanceFactor={15}>
-            <div className="tooltip" style={{ display: hovered || displayName ? 'block' : 'none' }}>Earth</div>
+            <div className="tooltip" style={{ display: displayName ? 'block' : 'none' }}>Earth</div>
           </Html>
           {/* <HtmlContent portal={domContent} /> */}
         </mesh>
       </group>
-      <Ecliptic x={75} y={75.5} />
+      <Ecliptic x={75} y={75.2} />
     </React.Fragment>
   )
 }

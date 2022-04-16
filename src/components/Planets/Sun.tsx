@@ -23,9 +23,11 @@ const Sun: React.FC = () => {
 }
 export default Sun;
 
-const LightSource: React.FC = () => {
-  return <React.Fragment>
-    <ambientLight />
-    <pointLight position={[0, 0, 0]} />
-  </React.Fragment>
+export const LightSource: React.FC = () => {
+  return (
+    <React.Fragment>
+      <ambientLight />
+      <pointLight position={[0, 0, 0]} castShadow={true} />
+    </React.Fragment>
+  )
 }

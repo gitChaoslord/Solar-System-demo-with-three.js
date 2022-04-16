@@ -21,7 +21,7 @@ const Venus: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={50} y={50.5} />
+      <Ecliptic x={50} y={50.2} />
     </React.Fragment>
   )
 }

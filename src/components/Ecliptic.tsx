@@ -12,7 +12,7 @@ const Ecliptic: React.FC<EclipticProps> = ({ x, y }) => {
     <React.Fragment>
       <mesh ref={mesh}>
         <ringGeometry attach="geometry" args={[x, y, 64]} />
-        <meshBasicMaterial side={THREE.DoubleSide} transparent attach="material" color={'#50514F'} />
+        <meshBasicMaterial side={THREE.DoubleSide} transparent attach="material" color={'#ADAEAD'} />
       </mesh>
     </React.Fragment>
   )

@@ -22,7 +22,7 @@ const Mars: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={100} y={100.5} />
+      <Ecliptic x={100} y={100.2} />
     </React.Fragment>
   )
 }

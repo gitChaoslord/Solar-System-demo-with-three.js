@@ -20,7 +20,7 @@ const Mercury: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={25} y={25.5} />
+      <Ecliptic x={25} y={25.2} />
     </React.Fragment>
   )
 }

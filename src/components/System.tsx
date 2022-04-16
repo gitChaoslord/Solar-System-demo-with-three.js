@@ -31,7 +31,7 @@ const SolarSystem: React.FC = () => {
     },
     {
       name: 'Earth',
-      component: <Earth />
+      component: <Earth /> //displayName={true}
     },
     {
       name: 'Mars',

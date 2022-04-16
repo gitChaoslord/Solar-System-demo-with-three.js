@@ -22,7 +22,7 @@ const Saturn: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={150} y={150.5} />
+      <Ecliptic x={150} y={150.2} />
     </React.Fragment>
   )
 }

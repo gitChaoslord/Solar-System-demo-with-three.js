@@ -22,7 +22,7 @@ const Neptune: React.FC = () => {
           <meshPhongMaterial map={texture} />
         </mesh>
       </group>
-      <Ecliptic x={200} y={200.5} />
+      <Ecliptic x={200} y={200.2} />
     </React.Fragment>
   )
 }
